@@ -1,0 +1,258 @@
+@import url("https://fonts.google.com/specimen/Raleway?family=Rubik:wght@400..700&display=swap");
+
+:root{
+
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+    --font-size: 14px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    background-image: url(fylo-data-storage-component-master/images/bg-desktop.png);
+    font-family: "Rubik", sans-serif;
+    font-size: var(--font-size);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0vw 40vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: var(--Grayish-Blue);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 12vw;
+    align-items: center;
+}
+
+.right,
+.left{
+    background-color: var(--Dark-Blue);
+}
+
+.right {
+    width: 35vw;
+    min-width: 35vw;
+    height: 25vh;
+    min-height: 25vh;
+    border-radius: 1vw;
+}
+
+.top {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: -5vh -7vw;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top p {
+    margin-left: 9vw;
+}
+
+.noti {
+    margin: 9vh -2vw;
+}
+
+b{
+    color:var(--Pale-Blue);
+}
+
+h4 {
+    margin: 0vh 3vw;
+    color: var(--Pale-Blue);
+}   
+
+.sub-number {
+    vertical-align: sub;
+}
+  
+.sub-number--deep {
+    vertical-align: -webkit-baseline-middle;
+}
+
+
+
+.notification {
+    background-color: white;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -10vh;
+    border-radius: 1vw;
+    margin-left: 5vw;
+    height: 10vh;
+}
+
+.colore-noti {
+    width: 0;
+    height: 0;
+    border-left: 4vw solid transparent;
+    border-top: 10vh solid white;
+    margin: -6vh 11.1vw;
+}
+
+h1{
+    color: #000;
+}
+
+.sup-number {
+    vertical-align: super;
+}
+
+.downl {
+    background-color: var(--Very-Dark-Blue);
+    width: 85%;
+    height: 2.3vh;
+    margin: 4vh 3vw;
+    border-radius: 2vw;
+}
+
+.filled-bar {
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 2vw;
+    height: 100%;
+    width: 81.5%;
+}
+
+.filled-bar i {
+    color: white;
+    margin-left: 22.9vw;
+}
+
+.from {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    width: 25vw;
+    min-width: 25vw;
+    height: 30vh;
+    min-height: 30vh;
+    border-radius: 1vw 10vw 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 1vh 3vw;
+}
+
+.left .top {
+    margin: 0vw;
+}
+
+.icon {
+    display: flex;
+    gap: 1vw;
+}
+
+.icon img {
+    background-color: var(--Very-Dark-Blue);
+    padding: 2vh 1vw;
+    border-radius: 0.5vw;
+}
+
+.icon img:hover{
+    background-color: #000;
+}
+
+@media screen and (max-width:768px) {
+
+    
+
+    body{
+        background-image: url("fylo-data-storage-component-master/images/bg-mobile.png");
+        background-size: cover; /* لجعل الخلفية تملأ الشاشة */
+        background-position: center; /* لضبط الخلفية في مركز الشاشة */
+        background-repeat: no-repeat; /* لمنع تكرار الخلفية */
+        width: 100%;
+        height: 100%;
+        font-size: 2vw;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 5vw;
+    }
+
+    .left {
+        width: 35vw;
+        min-width: 25vw;
+        height: 19vh;
+        min-height: 13vh;
+    }
+
+    .right {
+        width: 42vw;
+        min-width: 35vw;
+    }
+
+    .colore-noti {
+
+        border-left: 0vw solid transparent;
+
+    }
+
+    .top {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 22vh;
+    }
+
+    .top p {
+        margin-left: 0vw;
+        margin-top: 7vh;
+        text-align: center;
+    }
+
+    .noti {
+        margin: 2vh -2vw;
+    }
+
+    .notification {
+        width: 20vw;
+        margin-left: 1vw;
+    }
+
+    .downl {
+        margin: -22vh 3vw;
+    }
+
+    .filled-bar i {
+        margin-left: 26.9vw;
+    }
+
+    
+.from {
+    margin-top: 2vh;
+}
+
+    
+
+
+
+    
+    
+}
